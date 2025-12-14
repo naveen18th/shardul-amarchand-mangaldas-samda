@@ -173,4 +173,14 @@ document.addEventListener('click', (e) => {
     menu.classList.toggle('active');
     menu.classList.toggle('inactive');
   }
+
+  const btn1 = e.target.closest('.icon-menu');
+  if (btn1) {
+    const menu1 = btn1.closest('.default-content-wrapper').querySelector('ul');
+    menu.classList.add('inactive');
+    if (btn && menu) {
+      menu.classList.toggle('active');
+      menu.classList.toggle('inactive');
+    }
+  }
 });
