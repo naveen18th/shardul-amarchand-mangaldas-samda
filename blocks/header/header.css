@@ -22,6 +22,12 @@
   gap: 24px;
 }
 
+/* ===== SEARCH ICON IMAGE (LESS SPECIFIC FIRST) ===== */
+.icon-search img {
+  width: 18px;
+  height: 18px;
+}
+
 /* ===== LOGO ===== */
 .nav-brand picture img {
   max-height: 56px;
@@ -29,9 +35,9 @@
   display: block;
 }
 
-/* ===== NAV SECTIONS (MENU TEXT) ===== */
+/* ===== NAV SECTIONS ===== */
 .nav-sections {
-  display: none; /* hidden like in screenshot */
+  display: none;
 }
 
 /* ===== SEARCH TOOL ===== */
@@ -41,14 +47,12 @@
   justify-content: center;
 }
 
-/* Search container */
 .nav-tools .default-content-wrapper {
   position: relative;
   width: 420px;
   max-width: 100%;
 }
 
-/* Search input look */
 .nav-tools::before {
   content: "How may we help you?";
   position: absolute;
@@ -63,17 +67,11 @@
   font-size: 14px;
 }
 
-/* Search icon */
 .icon-search {
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.icon-search img {
-  width: 18px;
-  height: 18px;
 }
 
 /* ===== HAMBURGER ===== */
@@ -82,18 +80,16 @@
   align-items: center;
 }
 
-/* Button reset */
 .nav-hamburger button {
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-/* Hamburger / close icon */
 .nav-hamburger-icon {
   width: 24px;
   height: 2px;
-  background: #ffffff;
+  background: #fff;
   position: relative;
 }
 
@@ -103,7 +99,7 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  background: #ffffff;
+  background: #fff;
   left: 0;
 }
 
@@ -115,8 +111,8 @@
   top: 8px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+/* ===== RESPONSIVE (MODERN RANGE SYNTAX) ===== */
+@media (width <= 768px) {
   .nav-tools {
     display: none;
   }
