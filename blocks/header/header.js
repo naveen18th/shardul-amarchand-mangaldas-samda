@@ -165,16 +165,13 @@ export default async function decorate(block) {
   block.append(navWrapper);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.querySelector('.icon-search');
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.icon-search');
   const menu = document.querySelector('.nav-tools');
-
-  if (btn) {
-    menu.classList.add('inactive');
-
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('active');
-      menu.classList.toggle('inactive');
-    });
+  menu.classList.add('inactive');
+  if (btn && menu) {
+    menu.classList.toggle('active');
+    menu.classList.toggle('inactive');
   }
 });
+
