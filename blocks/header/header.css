@@ -11,7 +11,8 @@
 
 /* Nav wrapper */
 .nav-wrapper {
-  padding: 16px 32px;
+    padding: 0px 2%;
+    height: 120px;
 }
 
 /* ===== NAV ===== */
@@ -30,9 +31,10 @@
 
 /* ===== LOGO ===== */
 .nav-brand picture img {
-  max-height: 56px;
+  max-height: 90px;
   width: auto;
   display: block;
+  padding: 12px;
 }
 
 /* ===== NAV SECTIONS ===== */
