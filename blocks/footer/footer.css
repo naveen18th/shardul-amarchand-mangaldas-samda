@@ -1,38 +1,73 @@
-/* footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* ===== Footer Wrapper ===== */
+.footer-wrapper {
+  background-color: #0b1f5b; /* deep navy blue */
+  padding: 16px 40px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+/* Main footer layout */
+.footer-wrapper .footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-footer .footer p {
+/* ===== Left Section ===== */
+.footer-wrapper .section:first-child ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+.footer-wrapper .section:first-child ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-wrapper .section:first-child ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-wrapper .section:first-child p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* ===== Right Section (Icons / Logos) ===== */
+.footer-wrapper .section:last-child ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+.footer-wrapper .section:last-child img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* make icons white */
+  cursor: pointer;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .footer-wrapper .footer > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
-} */
 
-.footer-wrapper {
-  background: #f8f8f8;
-  padding: 40px 24px;
-  font-size: 14px;
-}
-
-.footer-wrapper ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 24px;
-}
-
-.footer-wrapper a {
-  text-decoration: none;
-  color: var(--text-muted);
+  .footer-wrapper .section:last-child {
+    align-self: flex-end;
+  }
 }
