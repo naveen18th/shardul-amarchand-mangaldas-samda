@@ -1,7 +1,7 @@
 /* ===== Footer Wrapper ===== */
 .footer-wrapper {
   background-color: #0b1f5b; /* deep navy blue */
-  padding: 16px 40px;
+  padding: 16px 20px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -45,15 +44,15 @@
 .footer-wrapper .section:last-child ul {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .footer-wrapper .section:last-child img {
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 40px;
   object-fit: contain;
   filter: brightness(0) invert(1); /* make icons white */
   cursor: pointer;
