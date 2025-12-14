@@ -124,7 +124,7 @@
   max-width: 100%;
 }
 
-.nav-tools::before {
+.nav-tools.active::before {
   content: "How may we help you?";
   position: absolute;
   width: 32%;
