@@ -166,8 +166,8 @@ export default async function decorate(block) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.querySelector('.nav-tools');
-  const menu = document.querySelector('.nav-sections');
+  const btn = document.querySelector('.icon-search');
+  const menu = document.querySelector('.nav-tools');
 
   if (btn) {
     menu.classList.add('inactive');
