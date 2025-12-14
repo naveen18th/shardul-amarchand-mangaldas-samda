@@ -27,6 +27,7 @@
 .icon-search img {
   width: auto;
   height: 36px;
+  filter: brightness(0) invert(1);
 }
 
 /* ===== LOGO ===== */
@@ -47,6 +48,8 @@
   flex: 1;
   display: flex;
   justify-content: end;
+  margin-top: -25px;
+  margin-right: 100px;
 }
 
 .nav-tools .default-content-wrapper {
@@ -72,8 +75,8 @@
 
 .icon-search {
   position: absolute;
-  right: 26px;
-  top: 165%;
+  right: -48px;
+  top: 151%;
   transform: translateY(-36%);
 }
 
