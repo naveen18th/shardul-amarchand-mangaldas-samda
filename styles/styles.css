@@ -98,15 +98,6 @@ main {
     padding: 0 !important;
 }
 
-.columns-container ul li::before {
-    background: #002856;
-    content: "" !important;
-    display: inline-flex;
-    height: 9pt;
-    transform: rotate(45deg);
-    width: 9pt;
-}
-
 .columns-2-cols > div > div:last-child {
   background: #e6e6e6;
   padding: 24px;
@@ -136,15 +127,22 @@ main {
 }
 
 .columns-2-cols > div > div:last-child li::before {
-  content: "›";
-  color: var(--blue);
-  font-size: 20px;
-  margin-right: 12px;
+  content: "➜";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 27px;
+  border: 1px solid #0b1f5b;
+  border-radius: 50%;
+  color: #0b1f5b;
+  font-size: 14px;
 }
 
 .columns-2-cols > div > div:last-child a {
   text-decoration: none;
   color: inherit;
+  padding: 0 10px;
 }
 
 .columns-2-cols > div > div:last-child a:hover {
