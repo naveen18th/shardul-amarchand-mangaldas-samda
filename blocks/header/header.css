@@ -156,6 +156,7 @@
 
 /* ===== RESPONSIVE (MODERN RANGE SYNTAX) ===== */
 @media (width <= 768px) {
+
   .header {
     padding: 12px 16px;
   }
@@ -163,9 +164,15 @@
   .header-wrapper {
     background-color: #0b1f5b; /* Deep navy blue */
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 144px auto;
+    padding: 0 24px;
   }
 
   #nav {
@@ -186,7 +193,7 @@
     display: block;
     position: fixed;
     top: 120px;
-    right: 300px;
+    right: 0;
     width: 176px;
     height: auto;
     background: #0b1f5b;
