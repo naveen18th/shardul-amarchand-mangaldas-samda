@@ -182,11 +182,22 @@
     top: -50px;
   }
 
+  .nav-sections ul.active {
+    display: block;
+    position: fixed;
+    top: 120px;
+    right: 200px;
+    width: 176px;
+    height: auto;
+    background: #0b1f5b;
+    padding: 21px 55px;
+    margin: 0;
+    list-style: none;
+    transition: right 0.4s ease;
+    z-index: 1023;
+  }
+
   .nav-tools {
     top: 113%;
-  }
-  
-  .nav-brand picture img {
-    max-height: 48px;
   }
 }
