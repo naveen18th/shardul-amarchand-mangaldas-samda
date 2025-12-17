@@ -179,7 +179,7 @@
     padding: 11px 30px;
     height: auto;
     width: 84%;
-    top: -70px;
+    top: -50px;
   }
 
   .nav-tools {
@@ -188,37 +188,5 @@
   
   .nav-brand picture img {
     max-height: 48px;
-  }
-}
-
-@media (width <= 768px) {
-  .header {
-    padding: 12px 16px;
-  }
-
-  .header-wrapper {
-    background-color: #0b1f5b; /* Deep navy blue */
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 9;
-  }
-
-  #nav {
-    gap: 16px;
-  }
-
-  .columns-2-cols > div > div:last-child {
-    background: #e6e6e6;
-    position: relative;
-    flex: 1;
-    padding: 11px 30px;
-    height: auto;
-    width: 84%;
-    top: -70px;
-  }
-
-  .nav-tools {
-    top: 113%;
   }
 }
