@@ -40,7 +40,6 @@ main {
 .columns-2-cols > div {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
-  gap: 48px;
   align-items: flex-start;
 }
 
